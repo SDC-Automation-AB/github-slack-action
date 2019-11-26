@@ -1,0 +1,15 @@
+{
+  "name": "github-slack-action",
+  "version": "1.0.0",
+  "description": "Push files too slack",
+  "main": "src/main.js",
+  "scripts": {
+    "main": "src/main.js"
+  },
+  "author": "Jeff Hägerman",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@slack/web-api": "^5.6.0"
+  }
+}
