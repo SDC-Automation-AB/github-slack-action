@@ -1,0 +1,32 @@
+name: 'Slack File Notify Action'
+description: 'Slack File Notification for Github Actions'
+author: mrjefflarry
+inputs:
+  SLACK_CHANNEL:
+    description: 'What Channel should we use'
+    required: true
+    default: ''
+  SLACK_TOKEN:
+    description: 'Slack application token'
+    required: true
+    default: ''
+  SLACK_TITLE:
+    description: 'Slack Title of the file'
+    required: true
+    default: ''
+  SLACK_COMMENT:
+    description: 'Slack comment above file'
+    required: true
+    default: ''
+  SLACK_FILE:
+    description: 'path to file'
+    required: true
+    default: ''
+  SLACK_FILENAME:
+    description: 'filename'
+    required: true
+    default: ''
+runs:
+  using: 'node12'
+  main: 'src/main.js'
+  post: 'src/cleanup.js'
