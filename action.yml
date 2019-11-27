@@ -29,4 +29,3 @@ inputs:
 runs:
   using: 'node12'
   main: 'src/main.js'
-  post: 'src/cleanup.js'

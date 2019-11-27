@@ -23,7 +23,7 @@ async function run() {
             initial_comment: SLACK_COMMENT
         });
         if (meta.ok) {
-            core.debug('File posted!');
+            core.debug('File posted!');            
         } else {
             core.setFailed('Error could not post file too slack!');
         }
@@ -32,3 +32,5 @@ async function run() {
         core.setFailed("Error ", Err);
     }
 }
+
+run();
