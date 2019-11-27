@@ -4,14 +4,14 @@ const fs = require('fs');
 
 async function run() {
 
-    const SLACK_CHANNEL = core.getInput('SLACK_CHANNEL', { required: true });
-    const SLACK_TOKEN = core.getInput('SLACK_TOKEN', { required: true });
-    const SLACK_TITLE = core.getInput('SLACK_TITLE', { required: true });
-    const SLACK_COMMENT = core.getInput('SLACK_COMMENT', { required: true });
-    const SLACK_FILE = core.getInput('SLACK_FILE', { required: true });
-    const SLACK_FILENAME = core.getInput('SLACK_FILENAME', { required: true });
-
     try {
+        const SLACK_CHANNEL = core.getInput('SLACK_CHANNEL', { required: true });
+        const SLACK_TOKEN = core.getInput('SLACK_TOKEN', { required: true });
+        const SLACK_TITLE = core.getInput('SLACK_TITLE', { required: true });
+        const SLACK_COMMENT = core.getInput('SLACK_COMMENT', { required: true });
+        const SLACK_FILE = core.getInput('SLACK_FILE', { required: true });
+        const SLACK_FILENAME = core.getInput('SLACK_FILENAME', { required: true });
+
         const web = new WebClient(SLACK_TOKEN);
 
         // upload file to slack and post it
