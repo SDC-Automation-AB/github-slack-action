@@ -1,4 +1,4 @@
-const { core } = require('@actions/core');
+const core = require('@actions/core');
 const { WebClient } = require('@slack/web-api');
 const fs = require('fs');
 
