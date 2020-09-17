@@ -29,7 +29,7 @@ async function run() {
         }
     } catch(Err) {
 
-        core.setFailed("Error ", Err);
+        core.setFailed("Error ", Err.message);
     }
 }
 
