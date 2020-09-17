@@ -27,7 +27,7 @@ async function run() {
         } else {
             core.setFailed('Error could not post file too slack!');
         }
-    } catch(Err) {
+    } catch(err) {
         core.setFailed(`Slack action failed with error ${err}`);
     }
 }
