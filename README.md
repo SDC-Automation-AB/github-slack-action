@@ -1,6 +1,9 @@
 # Slack Action
-Will send slack messages as action to a specified channel,
-remember too invite the "bot" too the channel if you use "Bot User OAuth Access Token"
+Will send slack messages as action to a specified channel.
+
+Invite "bot" user too the channel if you use token
+
+**Bot User OAuth Access Token**
 
 Invite the bot to the channel, inside channel write 
 ```
@@ -8,8 +11,18 @@ Invite the bot to the channel, inside channel write
 ```
 
 ## Errors
-if error ``not_in_channel`` invite bot
+**if error ``not_in_channel``** 
 
-se more errors in the link below
+ Invite bot to channel
+
+**if error ``missing_scope``** 
+
+Check authorized action scopes for token
+
+
+
+#### References and Error codes
+
+Post message to slack:
 
 https://api.slack.com/methods/chat.postMessage#errors
