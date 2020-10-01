@@ -9,7 +9,7 @@
   "author": "Jeff Hägerman",
   "license": "ISC",
   "dependencies": {
-    "@actions/core": "^1.2.0",
+    "@actions/core": "^1.2.6",
     "@slack/web-api": "^5.12.0"
   }
 }
