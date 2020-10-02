@@ -23,12 +23,12 @@ async function run() {
             initial_comment: SLACK_COMMENT
         });
         if (meta.ok) {
-            core.debug('File posted!');            
+            core.debug('File posted to slack!');
         } else {
             core.setFailed('Error could not post file too slack!');
         }
     } catch(err) {
-        core.setFailed(`Slack action failed with error ${err}`);
+        core.setFailed('Slack action failed with error ${err}');
     }
 }
 
